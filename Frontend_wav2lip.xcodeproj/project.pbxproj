@@ -27,6 +27,7 @@
 		7CF4182D2D4F1C130095FFD8 /* Frontend_wav2lip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frontend_wav2lip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF4183D2D4F1C130095FFD8 /* Frontend_wav2lipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Frontend_wav2lipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF418472D4F1C130095FFD8 /* Frontend_wav2lipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Frontend_wav2lipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3244AC82D516B6F0070998F /* Frontend_wav2lip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Frontend_wav2lip.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +80,7 @@
 				7CF418402D4F1C130095FFD8 /* Frontend_wav2lipTests */,
 				7CF4184A2D4F1C130095FFD8 /* Frontend_wav2lipUITests */,
 				7CF4182E2D4F1C130095FFD8 /* Products */,
+				C3244AC82D516B6F0070998F /* Frontend_wav2lip.entitlements */,
 			);
 			sourceTree = "<group>";
 		};
@@ -396,9 +398,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Frontend_wav2lip/Preview Content\"";
-				DEVELOPMENT_TEAM = V7H5936986;
+				DEVELOPMENT_TEAM = W7357AL6XF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is needed for lip sync functionality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,7 +413,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "coreml-1.Frontend-wav2lip";
+				PRODUCT_BUNDLE_IDENTIFIER = vibha.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -425,9 +429,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Frontend_wav2lip/Preview Content\"";
-				DEVELOPMENT_TEAM = V7H5936986;
+				DEVELOPMENT_TEAM = W7357AL6XF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone access is needed for lip sync functionality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "coreml-1.Frontend-wav2lip";
+				PRODUCT_BUNDLE_IDENTIFIER = vibha.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
