@@ -3,13 +3,13 @@
 This project brings the powerful Wav2Lip model to iOS, enabling real-time lip synchronization between a given audio track and a static face image. Built using Swift, CoreML, and AVFoundation, the app demonstrates advanced deep learning, signal processing, and UI integration in a mobile environment.
 
 
-## 👥 Team Members
+## Team Members
 - Yashas Besanahalli Vasudeva
 - Vibha Kestur Tumakuru Arun Kumar
 - Vinya Kestur Tumakuru Arun Kumar
 - Vrushank Ramagondanahalli Prasanna Kumar
 
-## 🚀 Features
+##  Features
 - **Real-time audio capture and processing**
 - **Mel spectrogram generation using vDSP**
 - **Face detection and masking using Vision framework**
@@ -17,7 +17,7 @@ This project brings the powerful Wav2Lip model to iOS, enabling real-time lip sy
 - **Output video rendering with synced lip movements**
 - **Gradient-based overlay for realistic output**
 
-## 🔧 Tech Stack
+##  Tech Stack
 - **Language**: Swift
 - **Frameworks**: CoreML, AVFoundation, Vision, SwiftUI
 - **Signal Processing**: Accelerate (vDSP)
@@ -26,7 +26,7 @@ This project brings the powerful Wav2Lip model to iOS, enabling real-time lip sy
   - Audio (mel spectrogram): `[5, 1, 80, 16]`
   - Face frames: `[5, 3, 96, 96]`
 
-## 🧠 Model Workflow
+## Model Workflow
 
 1. Audio Processing:
    - Captured via AVAudioEngine.
@@ -42,9 +42,9 @@ This project brings the powerful Wav2Lip model to iOS, enabling real-time lip sy
    - Output: Lip-synced frames (`[5, 3, 96, 96]`).
 
 4. Video Generation:
-   - Frames compiled into final video using `VideoGenerator.swift`.
+   - Frames are compiled into the final video using `VideoGenerator.swift`.
 
-## 📦 Core Swift Files
+## Core Swift Files
 
 | File | Responsibility |
 |------|----------------|
@@ -55,18 +55,18 @@ This project brings the powerful Wav2Lip model to iOS, enabling real-time lip sy
 | `VideoGenerator.swift` | Compiles generated frames into video |
 | `ContentView.swift` | UI layer for interaction |
 
-## 🧪 Challenges and Solutions
-- **Latency Issues**: Solved using GPU acceleration and memory-efficient frame handling.
-- **Model Input Alignment**: Precise reshaping and validation of CoreML MLMultiArray.
-- **Visual Artifacts**: Handled using CoreGraphics blend modes and gradient masks.
+##  Challenges and Solutions
+- Latency Issues: Solved using GPU acceleration and memory-efficient frame handling.
+- Model Input Alignment: Precise reshaping and validation of CoreML MLMultiArray.
+- Visual Artifacts: Handled using CoreGraphics blend modes and gradient masks.
 
-## 📈 Future Scope
+## Future Scope
 - Live camera input support
 - Real-time streaming optimization
 - Transformer-based multilingual support
 - Enhanced animation blending
 
-## 📄 License
+##  License
 MIT License
 
 ---
